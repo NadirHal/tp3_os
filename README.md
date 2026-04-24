@@ -14,3 +14,15 @@ Commandes BEUIP intégrées :
  - `msg <pseudo> <message>` / `broadcast <message>` : Envoi de messages UDP.
  - `ls <pseudo>` : Demande à un utilisateur la liste de ses fichiers via TCP et affiche le résultat (redirection via dup2).
  - `get <pseudo> <fichier>` : Télécharge un fichier depuis le répertoire partagé d'un utilisateur et l'enregistre en local.
+
+
+## Comment compiler et lancer le projet
+
+### 1. Compilation
+Le projet inclut un Makefile. Pour compiler le code, ouvre un terminal dans le dossier racine du projet et tape simplement :
+```bash
+make
+
+Ouvrir 2 terminals et lancer en faisant
+./biceps
+beuip start nADIR
